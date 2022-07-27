@@ -1,0 +1,14 @@
+version: "2"
+services:
+  app:
+    image: app
+    restart: on-failure
+    depends_on:
+      - db
+    ports:
+      - 8501:8501
+
+    
+  db:
+    image: manasa6900/stock_proj:1
+    

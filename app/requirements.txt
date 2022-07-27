@@ -1,0 +1,5 @@
+yfinance
+streamlit
+plotly
+psycopg2
+sqlalchemy

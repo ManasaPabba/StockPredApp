@@ -1,0 +1,15 @@
+version: "3.2"
+services:
+  postgres:
+    build: .
+
+    # open port so host machine can access
+    ports:
+      - "5432:5432"
+
+    # configure Postgres environment variables
+    environment:
+      - POSTGRES_USER=demo
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=00
+    
